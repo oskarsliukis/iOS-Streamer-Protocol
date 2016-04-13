@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="yy6-5B-qTG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Services-->
+        <scene sceneID="glK-Jw-AZ8">
+            <objects>
+                <tableViewController title="Services" id="r6K-Bc-wrP" customClass="ServicesTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="wYZ-ct-Acn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" restorationIdentifier="servicesCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="servicesCell" id="qxA-Zr-YaO">
+                                <rect key="frame" x="0.0" y="86" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qxA-Zr-YaO" id="Uzt-gf-gsp">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="r6K-Bc-wrP" id="sS3-id-zc2"/>
+                            <outlet property="delegate" destination="r6K-Bc-wrP" id="e9f-Z0-X9k"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N3P-ut-0NU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1832" y="-233"/>
+        </scene>
+        <!--Player-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jh1-pd-scT">
+                                <rect key="frame" x="275" y="518" width="50" height="62"/>
+                                <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="50"/>
+                                <state key="normal" title="►">
+                                    <color key="titleColor" red="1" green="0.2414165285" blue="0.22522280259999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressPlaybackButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="pJj-an-Bf5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Service" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3B-wp-bBg">
+                                <rect key="frame" x="251.5" y="84" width="97" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.2414165285" blue="0.22522280259999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A82-CU-gc9">
+                                <rect key="frame" x="355" y="534" width="32" height="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="0.2414165285" blue="0.22522280259999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressNextButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1rz-eg-Jg0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhp-MO-QBL">
+                                <rect key="frame" x="214" y="534" width="31" height="30"/>
+                                <state key="normal" title="Prev">
+                                    <color key="titleColor" red="1" green="0.2414165285" blue="0.22522280259999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressPreviousButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8NE-PD-sJV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jh1-pd-scT" firstAttribute="centerY" secondItem="Vhp-MO-QBL" secondAttribute="centerY" id="2c8-E9-3FT"/>
+                            <constraint firstItem="E3B-wp-bBg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="98j-f3-Sl3"/>
+                            <constraint firstItem="E3B-wp-bBg" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" priority="999" id="CzC-ts-Q4A"/>
+                            <constraint firstItem="jh1-pd-scT" firstAttribute="centerY" secondItem="A82-CU-gc9" secondAttribute="centerY" id="DqR-g9-qsu"/>
+                            <constraint firstAttribute="centerX" secondItem="E3B-wp-bBg" secondAttribute="centerX" id="QB1-HE-iXk"/>
+                            <constraint firstAttribute="centerX" secondItem="jh1-pd-scT" secondAttribute="centerX" id="QTq-FV-gPS"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="jh1-pd-scT" secondAttribute="bottom" constant="20" id="hWa-OK-t0W"/>
+                            <constraint firstItem="A82-CU-gc9" firstAttribute="leading" secondItem="jh1-pd-scT" secondAttribute="trailing" constant="30" id="mq2-sH-gUv"/>
+                            <constraint firstItem="jh1-pd-scT" firstAttribute="leading" secondItem="Vhp-MO-QBL" secondAttribute="trailing" constant="30" id="pR4-B0-oa6"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="E3B-wp-bBg" secondAttribute="trailing" priority="999" id="uya-HY-8B4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Player" id="m6R-hU-nwi">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="4RX-8w-I0j">
+                            <connections>
+                                <segue destination="r6K-Bc-wrP" kind="show" id="VPX-YV-SHa"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="currentlyPlayingItemTitle" destination="E3B-wp-bBg" id="W1d-6o-zX5"/>
+                        <outlet property="playbackButton" destination="jh1-pd-scT" id="2wv-PO-NCp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1116" y="236"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wNy-TQ-lUI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="yy6-5B-qTG" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SVL-J9-UOQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="92b-fR-vUz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ifB-XS-4be" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304" y="236"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7118A55D1B973280000E2315 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7118A55B1B973280000E2315 /* Spotify.framework */; };
+		7118A55E1B973280000E2315 /* Rdio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7118A55C1B973280000E2315 /* Rdio.framework */; };
+		7118A5601B97329A000E2315 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7118A55F1B97329A000E2315 /* CFNetwork.framework */; };
+		7118A5621B9732A3000E2315 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7118A5611B9732A3000E2315 /* AudioToolbox.framework */; };
+		7118A5641B9732AC000E2315 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7118A5631B9732AC000E2315 /* CoreGraphics.framework */; };
+		7118A5661B9732B5000E2315 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7118A5651B9732B5000E2315 /* CoreMedia.framework */; };
+		7118A5681B9732BD000E2315 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7118A5671B9732BD000E2315 /* Security.framework */; };
+		71A4F30C1CBE3DC90003CB6A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71A4F30B1CBE3DC90003CB6A /* Images.xcassets */; };
+		71A4F3111CBE3EA30003CB6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A4F30D1CBE3EA30003CB6A /* Main.storyboard */; };
+		71A4F3121CBE3EA30003CB6A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71A4F30F1CBE3EA30003CB6A /* LaunchScreen.xib */; };
+		71A4F3171CBE3EBB0003CB6A /* ServicesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3141CBE3EBB0003CB6A /* ServicesTableViewController.m */; };
+		71A4F3181CBE3EBB0003CB6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3161CBE3EBB0003CB6A /* ViewController.m */; };
+		71A4F31B1CBE3ECA0003CB6A /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F31A1CBE3ECA0003CB6A /* ServiceManager.m */; };
+		71A4F3221CBE3EDC0003CB6A /* AbstractPlayableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F31D1CBE3EDC0003CB6A /* AbstractPlayableObject.m */; };
+		71A4F3231CBE3EDC0003CB6A /* AbstractPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F31F1CBE3EDC0003CB6A /* AbstractPlayer.m */; };
+		71A4F3241CBE3EDC0003CB6A /* AbstractService.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3211CBE3EDC0003CB6A /* AbstractService.m */; };
+		71A4F32A1CBE3EE80003CB6A /* RdioPlaybackObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3261CBE3EE80003CB6A /* RdioPlaybackObject.m */; };
+		71A4F32B1CBE3EE80003CB6A /* RdioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3281CBE3EE80003CB6A /* RdioPlayer.m */; };
+		71A4F3321CBE3F030003CB6A /* SpotifyService.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F32C1CBE3F030003CB6A /* SpotifyService.m */; };
+		71A4F3331CBE3F030003CB6A /* SpotifyPlayableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F32E1CBE3F030003CB6A /* SpotifyPlayableObject.m */; };
+		71A4F3341CBE3F030003CB6A /* SpotifyPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3301CBE3F030003CB6A /* SpotifyPlayer.m */; };
+		71A4F3361CBE3F0B0003CB6A /* RdioService.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3351CBE3F0B0003CB6A /* RdioService.m */; };
+		71A4F33D1CBE3F1A0003CB6A /* LocalPlayableObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3381CBE3F1A0003CB6A /* LocalPlayableObject.m */; };
+		71A4F33E1CBE3F1A0003CB6A /* LocalPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F33A1CBE3F1A0003CB6A /* LocalPlayer.m */; };
+		71A4F33F1CBE3F1A0003CB6A /* LocalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F33C1CBE3F1A0003CB6A /* LocalService.m */; };
+		71A4F3471CBE3F410003CB6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3441CBE3F410003CB6A /* AppDelegate.m */; };
+		71A4F3491CBE3F410003CB6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71A4F3461CBE3F410003CB6A /* main.m */; };
+		71DB866F1B97013E00FB77D2 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DB866E1B97013E00FB77D2 /* MediaPlayer.framework */; };
+		71DB86751B97199100FB77D2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DB86741B97199100FB77D2 /* AVFoundation.framework */; };
+		71DB86771B97199900FB77D2 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71DB86761B97199900FB77D2 /* SystemConfiguration.framework */; };
+		A7D3DFD926814AD3677F5A95 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E7629A6BD6BC3B4BB020C5 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		17BF0966E86270C41240FE1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		7118A55B1B973280000E2315 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Spotify.framework; path = Frameworks/Spotify.framework; sourceTree = "<group>"; };
+		7118A55C1B973280000E2315 /* Rdio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Rdio.framework; path = Frameworks/Rdio.framework; sourceTree = "<group>"; };
+		7118A55F1B97329A000E2315 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		7118A5611B9732A3000E2315 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		7118A5631B9732AC000E2315 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7118A5651B9732B5000E2315 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7118A5671B9732BD000E2315 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		71A4F30B1CBE3DC90003CB6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StreamerPrototype/Images.xcassets; sourceTree = SOURCE_ROOT; };
+		71A4F30E1CBE3EA30003CB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = StreamerPrototype/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		71A4F3101CBE3EA30003CB6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = StreamerPrototype/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		71A4F3131CBE3EBB0003CB6A /* ServicesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServicesTableViewController.h; path = StreamerPrototype/ServicesTableViewController.h; sourceTree = SOURCE_ROOT; };
+		71A4F3141CBE3EBB0003CB6A /* ServicesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServicesTableViewController.m; path = StreamerPrototype/ServicesTableViewController.m; sourceTree = SOURCE_ROOT; };
+		71A4F3151CBE3EBB0003CB6A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = StreamerPrototype/ViewController.h; sourceTree = SOURCE_ROOT; };
+		71A4F3161CBE3EBB0003CB6A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = StreamerPrototype/ViewController.m; sourceTree = SOURCE_ROOT; };
+		71A4F3191CBE3ECA0003CB6A /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceManager.h; path = StreamerPrototype/ServiceManager.h; sourceTree = SOURCE_ROOT; };
+		71A4F31A1CBE3ECA0003CB6A /* ServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceManager.m; path = StreamerPrototype/ServiceManager.m; sourceTree = SOURCE_ROOT; };
+		71A4F31C1CBE3EDC0003CB6A /* AbstractPlayableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractPlayableObject.h; path = StreamerPrototype/AbstractPlayableObject.h; sourceTree = SOURCE_ROOT; };
+		71A4F31D1CBE3EDC0003CB6A /* AbstractPlayableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractPlayableObject.m; path = StreamerPrototype/AbstractPlayableObject.m; sourceTree = SOURCE_ROOT; };
+		71A4F31E1CBE3EDC0003CB6A /* AbstractPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractPlayer.h; path = StreamerPrototype/AbstractPlayer.h; sourceTree = SOURCE_ROOT; };
+		71A4F31F1CBE3EDC0003CB6A /* AbstractPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractPlayer.m; path = StreamerPrototype/AbstractPlayer.m; sourceTree = SOURCE_ROOT; };
+		71A4F3201CBE3EDC0003CB6A /* AbstractService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AbstractService.h; path = StreamerPrototype/AbstractService.h; sourceTree = SOURCE_ROOT; };
+		71A4F3211CBE3EDC0003CB6A /* AbstractService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AbstractService.m; path = StreamerPrototype/AbstractService.m; sourceTree = SOURCE_ROOT; };
+		71A4F3251CBE3EE80003CB6A /* RdioPlaybackObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RdioPlaybackObject.h; path = StreamerPrototype/RdioPlaybackObject.h; sourceTree = SOURCE_ROOT; };
+		71A4F3261CBE3EE80003CB6A /* RdioPlaybackObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RdioPlaybackObject.m; path = StreamerPrototype/RdioPlaybackObject.m; sourceTree = SOURCE_ROOT; };
+		71A4F3271CBE3EE80003CB6A /* RdioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RdioPlayer.h; path = StreamerPrototype/RdioPlayer.h; sourceTree = SOURCE_ROOT; };
+		71A4F3281CBE3EE80003CB6A /* RdioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RdioPlayer.m; path = StreamerPrototype/RdioPlayer.m; sourceTree = SOURCE_ROOT; };
+		71A4F3291CBE3EE80003CB6A /* RdioService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RdioService.h; path = StreamerPrototype/RdioService.h; sourceTree = SOURCE_ROOT; };
+		71A4F32C1CBE3F030003CB6A /* SpotifyService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpotifyService.m; path = StreamerPrototype/SpotifyService.m; sourceTree = SOURCE_ROOT; };
+		71A4F32D1CBE3F030003CB6A /* SpotifyPlayableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotifyPlayableObject.h; path = StreamerPrototype/SpotifyPlayableObject.h; sourceTree = SOURCE_ROOT; };
+		71A4F32E1CBE3F030003CB6A /* SpotifyPlayableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpotifyPlayableObject.m; path = StreamerPrototype/SpotifyPlayableObject.m; sourceTree = SOURCE_ROOT; };
+		71A4F32F1CBE3F030003CB6A /* SpotifyPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotifyPlayer.h; path = StreamerPrototype/SpotifyPlayer.h; sourceTree = SOURCE_ROOT; };
+		71A4F3301CBE3F030003CB6A /* SpotifyPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpotifyPlayer.m; path = StreamerPrototype/SpotifyPlayer.m; sourceTree = SOURCE_ROOT; };
+		71A4F3311CBE3F030003CB6A /* SpotifyService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpotifyService.h; path = StreamerPrototype/SpotifyService.h; sourceTree = SOURCE_ROOT; };
+		71A4F3351CBE3F0B0003CB6A /* RdioService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RdioService.m; path = StreamerPrototype/RdioService.m; sourceTree = SOURCE_ROOT; };
+		71A4F3371CBE3F1A0003CB6A /* LocalPlayableObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalPlayableObject.h; path = StreamerPrototype/LocalPlayableObject.h; sourceTree = SOURCE_ROOT; };
+		71A4F3381CBE3F1A0003CB6A /* LocalPlayableObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalPlayableObject.m; path = StreamerPrototype/LocalPlayableObject.m; sourceTree = SOURCE_ROOT; };
+		71A4F3391CBE3F1A0003CB6A /* LocalPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalPlayer.h; path = StreamerPrototype/LocalPlayer.h; sourceTree = SOURCE_ROOT; };
+		71A4F33A1CBE3F1A0003CB6A /* LocalPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalPlayer.m; path = StreamerPrototype/LocalPlayer.m; sourceTree = SOURCE_ROOT; };
+		71A4F33B1CBE3F1A0003CB6A /* LocalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LocalService.h; path = StreamerPrototype/LocalService.h; sourceTree = SOURCE_ROOT; };
+		71A4F33C1CBE3F1A0003CB6A /* LocalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LocalService.m; path = StreamerPrototype/LocalService.m; sourceTree = SOURCE_ROOT; };
+		71A4F3401CBE3F2C0003CB6A /* Playable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Playable.h; path = StreamerPrototype/Playable.h; sourceTree = SOURCE_ROOT; };
+		71A4F3411CBE3F2C0003CB6A /* PlayerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayerProtocol.h; path = StreamerPrototype/PlayerProtocol.h; sourceTree = SOURCE_ROOT; };
+		71A4F3421CBE3F2C0003CB6A /* ServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceProtocol.h; path = StreamerPrototype/ServiceProtocol.h; sourceTree = SOURCE_ROOT; };
+		71A4F3431CBE3F410003CB6A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = StreamerPrototype/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		71A4F3441CBE3F410003CB6A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = StreamerPrototype/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		71A4F3451CBE3F410003CB6A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StreamerPrototype/Info.plist; sourceTree = SOURCE_ROOT; };
+		71A4F3461CBE3F410003CB6A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StreamerPrototype/main.m; sourceTree = SOURCE_ROOT; };
+		71DB86171B95BFAB00FB77D2 /* StreamerPrototype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreamerPrototype.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71DB866E1B97013E00FB77D2 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		71DB86741B97199100FB77D2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		71DB86761B97199900FB77D2 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		84E7629A6BD6BC3B4BB020C5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFFF2292D2ECB87220B26FD /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		71DB86141B95BFAB00FB77D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7118A5681B9732BD000E2315 /* Security.framework in Frameworks */,
+				7118A5661B9732B5000E2315 /* CoreMedia.framework in Frameworks */,
+				7118A5641B9732AC000E2315 /* CoreGraphics.framework in Frameworks */,
+				7118A5621B9732A3000E2315 /* AudioToolbox.framework in Frameworks */,
+				7118A5601B97329A000E2315 /* CFNetwork.framework in Frameworks */,
+				71DB86771B97199900FB77D2 /* SystemConfiguration.framework in Frameworks */,
+				71DB86751B97199100FB77D2 /* AVFoundation.framework in Frameworks */,
+				7118A55E1B973280000E2315 /* Rdio.framework in Frameworks */,
+				71DB866F1B97013E00FB77D2 /* MediaPlayer.framework in Frameworks */,
+				7118A55D1B973280000E2315 /* Spotify.framework in Frameworks */,
+				A7D3DFD926814AD3677F5A95 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		618401723F6D03292ABA20A2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBFFF2292D2ECB87220B26FD /* Pods.debug.xcconfig */,
+				17BF0966E86270C41240FE1A /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71DB860E1B95BFAB00FB77D2 = {
+			isa = PBXGroup;
+			children = (
+				71DB86701B97015300FB77D2 /* Frameworks */,
+				71DB86191B95BFAB00FB77D2 /* StreamerPrototype */,
+				71DB86181B95BFAB00FB77D2 /* Products */,
+				618401723F6D03292ABA20A2 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		71DB86181B95BFAB00FB77D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				71DB86171B95BFAB00FB77D2 /* StreamerPrototype.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		71DB86191B95BFAB00FB77D2 /* StreamerPrototype */ = {
+			isa = PBXGroup;
+			children = (
+				71DB867E1B9729F700FB77D2 /* Resources */,
+				71DB867D1B9729E200FB77D2 /* Views */,
+				71DB86581B95CC9D00FB77D2 /* View Controllers */,
+				71DB86551B95CC6B00FB77D2 /* Audio Services */,
+				71DB861A1B95BFAB00FB77D2 /* Supporting Files */,
+			);
+			name = StreamerPrototype;
+			path = MusicAppPrototype;
+			sourceTree = "<group>";
+		};
+		71DB861A1B95BFAB00FB77D2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F3431CBE3F410003CB6A /* AppDelegate.h */,
+				71A4F3441CBE3F410003CB6A /* AppDelegate.m */,
+				71A4F3451CBE3F410003CB6A /* Info.plist */,
+				71A4F3461CBE3F410003CB6A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		71DB86551B95CC6B00FB77D2 /* Audio Services */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F3191CBE3ECA0003CB6A /* ServiceManager.h */,
+				71A4F31A1CBE3ECA0003CB6A /* ServiceManager.m */,
+				71DB86571B95CC7F00FB77D2 /* Implementations */,
+				71DB86561B95CC7300FB77D2 /* Protocols */,
+			);
+			name = "Audio Services";
+			sourceTree = "<group>";
+		};
+		71DB86561B95CC7300FB77D2 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F3401CBE3F2C0003CB6A /* Playable.h */,
+				71A4F3411CBE3F2C0003CB6A /* PlayerProtocol.h */,
+				71A4F3421CBE3F2C0003CB6A /* ServiceProtocol.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		71DB86571B95CC7F00FB77D2 /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				71DB86601B95D91B00FB77D2 /* Base */,
+				71DB867F1B972C7100FB77D2 /* Rdio */,
+				71DB865C1B95D0CF00FB77D2 /* Spotify */,
+				71DB865B1B95D0C700FB77D2 /* Local */,
+			);
+			name = Implementations;
+			sourceTree = "<group>";
+		};
+		71DB86581B95CC9D00FB77D2 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F3131CBE3EBB0003CB6A /* ServicesTableViewController.h */,
+				71A4F3141CBE3EBB0003CB6A /* ServicesTableViewController.m */,
+				71A4F3151CBE3EBB0003CB6A /* ViewController.h */,
+				71A4F3161CBE3EBB0003CB6A /* ViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		71DB865B1B95D0C700FB77D2 /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F3371CBE3F1A0003CB6A /* LocalPlayableObject.h */,
+				71A4F3381CBE3F1A0003CB6A /* LocalPlayableObject.m */,
+				71A4F3391CBE3F1A0003CB6A /* LocalPlayer.h */,
+				71A4F33A1CBE3F1A0003CB6A /* LocalPlayer.m */,
+				71A4F33B1CBE3F1A0003CB6A /* LocalService.h */,
+				71A4F33C1CBE3F1A0003CB6A /* LocalService.m */,
+			);
+			name = Local;
+			sourceTree = "<group>";
+		};
+		71DB865C1B95D0CF00FB77D2 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F32C1CBE3F030003CB6A /* SpotifyService.m */,
+				71A4F32D1CBE3F030003CB6A /* SpotifyPlayableObject.h */,
+				71A4F32E1CBE3F030003CB6A /* SpotifyPlayableObject.m */,
+				71A4F32F1CBE3F030003CB6A /* SpotifyPlayer.h */,
+				71A4F3301CBE3F030003CB6A /* SpotifyPlayer.m */,
+				71A4F3311CBE3F030003CB6A /* SpotifyService.h */,
+			);
+			name = Spotify;
+			sourceTree = "<group>";
+		};
+		71DB86601B95D91B00FB77D2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F31C1CBE3EDC0003CB6A /* AbstractPlayableObject.h */,
+				71A4F31D1CBE3EDC0003CB6A /* AbstractPlayableObject.m */,
+				71A4F31E1CBE3EDC0003CB6A /* AbstractPlayer.h */,
+				71A4F31F1CBE3EDC0003CB6A /* AbstractPlayer.m */,
+				71A4F3201CBE3EDC0003CB6A /* AbstractService.h */,
+				71A4F3211CBE3EDC0003CB6A /* AbstractService.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		71DB86701B97015300FB77D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7118A5671B9732BD000E2315 /* Security.framework */,
+				7118A5651B9732B5000E2315 /* CoreMedia.framework */,
+				7118A5631B9732AC000E2315 /* CoreGraphics.framework */,
+				7118A5611B9732A3000E2315 /* AudioToolbox.framework */,
+				7118A55F1B97329A000E2315 /* CFNetwork.framework */,
+				7118A55B1B973280000E2315 /* Spotify.framework */,
+				7118A55C1B973280000E2315 /* Rdio.framework */,
+				71DB86761B97199900FB77D2 /* SystemConfiguration.framework */,
+				71DB86741B97199100FB77D2 /* AVFoundation.framework */,
+				71DB866E1B97013E00FB77D2 /* MediaPlayer.framework */,
+				84E7629A6BD6BC3B4BB020C5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71DB867D1B9729E200FB77D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F30D1CBE3EA30003CB6A /* Main.storyboard */,
+				71A4F30F1CBE3EA30003CB6A /* LaunchScreen.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		71DB867E1B9729F700FB77D2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F30B1CBE3DC90003CB6A /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		71DB867F1B972C7100FB77D2 /* Rdio */ = {
+			isa = PBXGroup;
+			children = (
+				71A4F3351CBE3F0B0003CB6A /* RdioService.m */,
+				71A4F3251CBE3EE80003CB6A /* RdioPlaybackObject.h */,
+				71A4F3261CBE3EE80003CB6A /* RdioPlaybackObject.m */,
+				71A4F3271CBE3EE80003CB6A /* RdioPlayer.h */,
+				71A4F3281CBE3EE80003CB6A /* RdioPlayer.m */,
+				71A4F3291CBE3EE80003CB6A /* RdioService.h */,
+			);
+			name = Rdio;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		71DB86161B95BFAB00FB77D2 /* StreamerPrototype */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71DB863A1B95BFAB00FB77D2 /* Build configuration list for PBXNativeTarget "StreamerPrototype" */;
+			buildPhases = (
+				CEDE3BD18A07E7E88D3FFC33 /* Check Pods Manifest.lock */,
+				71DB86131B95BFAB00FB77D2 /* Sources */,
+				71DB86141B95BFAB00FB77D2 /* Frameworks */,
+				71DB86151B95BFAB00FB77D2 /* Resources */,
+				29D1AC0E615C4BB96ADDFE6A /* Copy Pods Resources */,
+				908910155B19B11980A1F4F5 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreamerPrototype;
+			productName = MusicAppPrototype;
+			productReference = 71DB86171B95BFAB00FB77D2 /* StreamerPrototype.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		71DB860F1B95BFAB00FB77D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = OL;
+				TargetAttributes = {
+					71DB86161B95BFAB00FB77D2 = {
+						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 71DB86121B95BFAB00FB77D2 /* Build configuration list for PBXProject "StreamerPrototype" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 71DB860E1B95BFAB00FB77D2;
+			productRefGroup = 71DB86181B95BFAB00FB77D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				71DB86161B95BFAB00FB77D2 /* StreamerPrototype */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		71DB86151B95BFAB00FB77D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A4F30C1CBE3DC90003CB6A /* Images.xcassets in Resources */,
+				71A4F3121CBE3EA30003CB6A /* LaunchScreen.xib in Resources */,
+				71A4F3111CBE3EA30003CB6A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		29D1AC0E615C4BB96ADDFE6A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		908910155B19B11980A1F4F5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEDE3BD18A07E7E88D3FFC33 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		71DB86131B95BFAB00FB77D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71A4F33E1CBE3F1A0003CB6A /* LocalPlayer.m in Sources */,
+				71A4F32B1CBE3EE80003CB6A /* RdioPlayer.m in Sources */,
+				71A4F33F1CBE3F1A0003CB6A /* LocalService.m in Sources */,
+				71A4F31B1CBE3ECA0003CB6A /* ServiceManager.m in Sources */,
+				71A4F3471CBE3F410003CB6A /* AppDelegate.m in Sources */,
+				71A4F3341CBE3F030003CB6A /* SpotifyPlayer.m in Sources */,
+				71A4F3331CBE3F030003CB6A /* SpotifyPlayableObject.m in Sources */,
+				71A4F33D1CBE3F1A0003CB6A /* LocalPlayableObject.m in Sources */,
+				71A4F3181CBE3EBB0003CB6A /* ViewController.m in Sources */,
+				71A4F3171CBE3EBB0003CB6A /* ServicesTableViewController.m in Sources */,
+				71A4F3241CBE3EDC0003CB6A /* AbstractService.m in Sources */,
+				71A4F3231CBE3EDC0003CB6A /* AbstractPlayer.m in Sources */,
+				71A4F3491CBE3F410003CB6A /* main.m in Sources */,
+				71A4F3221CBE3EDC0003CB6A /* AbstractPlayableObject.m in Sources */,
+				71A4F3361CBE3F0B0003CB6A /* RdioService.m in Sources */,
+				71A4F32A1CBE3EE80003CB6A /* RdioPlaybackObject.m in Sources */,
+				71A4F3321CBE3F030003CB6A /* SpotifyService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		71A4F30D1CBE3EA30003CB6A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71A4F30E1CBE3EA30003CB6A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71A4F30F1CBE3EA30003CB6A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71A4F3101CBE3EA30003CB6A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		71DB86381B95BFAB00FB77D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		71DB86391B95BFAB00FB77D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		71DB863B1B95BFAB00FB77D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBFFF2292D2ECB87220B26FD /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = StreamerPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OL.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = StreamerPrototype;
+			};
+			name = Debug;
+		};
+		71DB863C1B95BFAB00FB77D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17BF0966E86270C41240FE1A /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = StreamerPrototype/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.OL.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = StreamerPrototype;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		71DB86121B95BFAB00FB77D2 /* Build configuration list for PBXProject "StreamerPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71DB86381B95BFAB00FB77D2 /* Debug */,
+				71DB86391B95BFAB00FB77D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71DB863A1B95BFAB00FB77D2 /* Build configuration list for PBXNativeTarget "StreamerPrototype" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71DB863B1B95BFAB00FB77D2 /* Debug */,
+				71DB863C1B95BFAB00FB77D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 71DB860F1B95BFAB00FB77D2 /* Project object */;
+}
