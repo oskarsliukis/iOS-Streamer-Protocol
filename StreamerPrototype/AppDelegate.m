@@ -48,6 +48,9 @@
     UINavigationController *navCon = (UINavigationController *)self.window.rootViewController;
     ViewController *rootViewController = [navCon.viewControllers firstObject];
     [rootViewController handleCallbackURL:url];
+
+    NSLog(@"TEST 3");
+
     return YES;
 }
 
