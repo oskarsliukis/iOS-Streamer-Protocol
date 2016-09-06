@@ -50,7 +50,7 @@
     [rootViewController handleCallbackURL:url];
 
     NSLog(@"TEST 3");
-
+    NSLog(@"TEST 4");
     return YES;
 }
 
