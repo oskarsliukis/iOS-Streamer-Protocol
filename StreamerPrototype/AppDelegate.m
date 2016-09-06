@@ -21,6 +21,8 @@
     NSLog(@"Create conflict 1");
     NSLog(@"TEST"); 
 
+    NSLog(@"TEST 2")
+
     return YES;
 }
 
