@@ -18,7 +18,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    return YES;
+    NSLog(@"Create conflict 1");
+    NSLog(@"TEST"); 
+
+    NSLog(@"TEST 2")
+
+    NSLog(@"TEST 4")
+
+    NSLog(@"TEST 6")
+
+
+
+  NSLog(@"FINAL CHANGE");
+  NSLog(@"FINAL CHANG2");
+
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -40,6 +54,8 @@
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
+    NSLog(@"Create conflict 1");
+    NSLog(@"Create conflict 2");
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
@@ -48,6 +64,9 @@
     UINavigationController *navCon = (UINavigationController *)self.window.rootViewController;
     ViewController *rootViewController = [navCon.viewControllers firstObject];
     [rootViewController handleCallbackURL:url];
+
+    NSLog(@"TEST 3");
+    NSLog(@"TEST 4");
     return YES;
 }
 
